@@ -18,13 +18,6 @@
   /*changes height of the header pic*/
 }
 
-/*
-.pink-background{
-    background-color: #F2AAB0;
-    padding-bottom: 20px;
-}
-*/
-
 .navbar,
 .container-fluid {
   padding: 0;
@@ -36,7 +29,7 @@
   justify-content: space-between;
   align-items: flex-end;
   background-color: #ffa6af;
-  padding: 10px;
+  padding-bottom: 10px;
   /* margin-top: -13.3%;*/
 }
 
@@ -55,6 +48,7 @@
   background-size: cover;
   position: relative;
   text-align: center;
+  padding-bottom: 2em;
 }
 
 #hero-text {
@@ -117,10 +111,10 @@
 
 #logo {
   /* flex: 1; */
-  padding: 0px 15px 0 15px;
+  padding: 0px 15px 0px 15px;
   display: inline;
-  height: 100px;
-  width: 150px;
+  height: 65px;
+  width: 100px;
   align-self: flex-end;
 }
 
@@ -171,10 +165,6 @@
 }
 
 .nav-box {
-  /*text-align:right;
-    width: 300px;
-    margin-top: 50px;
-    flex-flow: wrap;*/
   width: 850px;
   display: flex;
   justify-content: flex-end;
@@ -356,6 +346,7 @@ a {
   flex-flow: wrap;
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
 }
 
 .product-box {
@@ -429,10 +420,17 @@ footer {
   background-color: #f9dfe0; /* Replace with your desired hover background color */
 }
 
+#faqs {
+  margin-left: 2em;
+}
+
 .faq-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 2em;
 }
 
 .faq-question {
