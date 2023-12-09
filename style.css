@@ -59,10 +59,43 @@
   font-size: large;
 }
 
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/booth.jpg);
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.inner-detail-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Adjust button styles if needed */
+.inner-detail-box button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
 .rounded-buttons {
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 20px;*/
+
+  padding: 15px 30px; /* Adjust padding for larger buttons */
+  border-radius: 30px; /* Adjust border-radius for rounded corners */
+  font-size: 18px; /* Adjust font size for larger text */
+  margin-right: 10px;
 }
 
 .rounded-buttons button {
@@ -70,10 +103,12 @@
   border-radius: 25px;
   font-size: 16px;
   margin-right: 10px;
+  color: black;
+  background-color: #f9dfe0;
 }
 
 /* Style for Button 1 */
-.rounded-buttons {
+.rounded-buttons a.btn-secondary {
   background-color: #8b1317;
   color: black;
   border: 2px solid #f9dfe0;
@@ -84,6 +119,10 @@
   background-color: #f9dfe0;
   color: black;
   border: 2px solid #f9dfe0;
+}
+
+.rounded-buttons button:hover {
+  background-color: #ccc;
 }
 
 #logo {
@@ -133,18 +172,6 @@
     border: none;
     padding: 10px;
   }
-}
-
-.inner-detail-box {
-  margin-top: 10px;
-  margin-bottom: 100px;
-  column-gap: 100px;
-  line-height: 100px;
-  /*CHANGED*/
-  width: 900px;
-  /*CHANGED*/
-  flex-direction: row;
-  justify-content: right;
 }
 
 .right {
@@ -215,7 +242,13 @@ body {
   margin: 0;
   padding: 0;
   color: black;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
 }
 
 .eyes {
@@ -300,15 +333,6 @@ a {
   font-weight: 800;
 }
 
-.current-page {
-  background-color: yellow;
-  font-weight: 800;
-}
-
-.product-info {
-  text-decoration: underline;
-}
-
 .no-bold {
   font-weight: 400;
 }
@@ -320,10 +344,6 @@ a {
 }
 
 .nav-box {
-  /*text-align:right;
-    width: 300px;
-    margin-top: 50px;
-    flex-flow: wrap;*/
   width: 850px;
   display: flex;
   justify-content: flex-end;
@@ -341,50 +361,11 @@ a {
   margin-top: 30px;
 }
 
-.button {
-  background-color: yellow;
-  border: 2px solid black;
-  padding: 10px 32px;
-  text-align: center;
-  font-weight: 600;
-}
-
-.cart-image {
-  width: 200px;
-  border: 4px solid black;
-}
-
-.remove-product {
-  text-decoration: underline;
-  font-weight: 600;
-  font-size: 10px;
-}
-
-.cart-text,
-.cart-price,
-.cart-total {
-  margin: 20px 0px 20px 0px;
-}
-
-.cart-line {
-  width: 600px;
-}
-
 /*flexbox container section*/
 .container {
   flex-flow: wrap;
   display: flex;
   align-items: flex-start;
-
-  /*
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px; /*adds gap between the items
-   flex-direction: row;
-    justify-content: center;
-    justify-content: space-around;*/
 }
 
 .product-box {
@@ -397,17 +378,6 @@ a {
   /* Align content vertically */
   font-size: 32px;
   margin-top: 30px;
-  /*flex: auto;
-    width: 418px;
-    margin-top: 30px;
-    margin-left: 0px;
-    margin-right: 0px;
-    display: inline-flex;
-
-
-
-      margin-bottom: 20px;
-    */
 }
 
 .product-gallery-img {
@@ -422,76 +392,6 @@ a {
 .product {
   display: flex;
   align-items: center;
-}
-
-.cart-image {
-  width: 200px;
-  border: 4px solid black;
-}
-
-.remove-product {
-  text-decoration: underline;
-  font-weight: 600;
-  font-size: 20px;
-  /*CHANGED*/
-  margin-top: 10px;
-  margin-bottom: 10px;
-  /*CHANGED*/
-}
-
-.product-description {
-  margin-left: 20px;
-  text-indent: left;
-}
-
-.cart-text,
-.cart-price,
-.cart-total {
-  margin: 20px 0px 20px 0px;
-}
-
-.cart-line {
-  width: 600px;
-}
-
-.cart-text {
-  text-indent: left;
-  justify-content: left;
-}
-
-.cart-price {
-  text-indent: right;
-  justify-content: right;
-}
-
-.cart-item-w-remove-button {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  /*CHANGE align-items: start;*/
-  /*CHANGE text-align:left; */
-  padding: 10px;
-  margin-left: 285px;
-  /*CHANGE width=600px; */
-}
-
-.cart-item {
-  /*margin-top:10px;*/
-  line-height: 35px;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: left;
-  padding: 30px;
-  /* margin-left: 385px; */
-}
-
-.product-description {
-  padding: 10px;
-  margin-left: 10px;
 }
 
 footer {
