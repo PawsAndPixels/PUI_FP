@@ -5,7 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Find the corresponding nav link and add the "active" class
   var navLinks = document.querySelectorAll(".nav-link");
   navLinks.forEach(function (link) {
-    if (link.href === currentPageUrl) {
+    console.log("checking " + link.href + ", " + currentPageUrl);
+    if (link.href == currentPageUrl) {
+      console.log("FOUND");
       link.classList.add("active");
     }
   });

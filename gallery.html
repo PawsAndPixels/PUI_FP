@@ -9,9 +9,11 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
     />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto:wght@300&display=swap");
-    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,140 +27,228 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="stylesheet" href="about.css" type="text/css" />
+    <link rel="stylesheet" href="gallery.css" type="text/css" />
 
     <script defer type="text/javascript" src="./JS/EyeBall.js"></script>
+    <script defer type="text/javascript" src="./JS/Underline.js"></script>
   </head>
 
-<body>
-  <div class="dashboard-container">
-    <header>
-      <div class="header">
-        <!--  <nav class="nav">
-               <a href="./index.html">
-                <img class="logo" src="../images/logo.png" alt="logo" width="400">-->
-        <div class="eyes">
-          <div class="eye">
-            <div class="ball"></div>
-          </div>
+  <body>
+    <div class="dashboard-container">
+      <header>
+        <div class="header">
+          <!--  <nav class="nav">
+                <a href="./index.html">
+                  <img class="logo" src="../images/logo.png" alt="logo" width="400">-->
+          <div class="eyes">
+            <div class="eye">
+              <div class="ball"></div>
+            </div>
 
-          <div class="eye">
-            <div class="ball"></div>
+            <div class="eye">
+              <div class="ball"></div>
+            </div>
           </div>
         </div>
-      </div>
-  </div>
-  </header>
-
-
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <a href="./index.html"><img id="logo" src="images/logo.png" alt="logo" width="400px"></a>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#maker-story">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">DESIGNS & PRODUCTS</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              CONTACT
-            </a>
-            <ul class="dropdown-menu">
-              <a class="nav-link dropdown-item" href="faqs.html">FAQs</a>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Message Me</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+      </header>
     </div>
-  </nav>
 
-  <main style="height: 1300px">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a href="./index.html"><img id="logo" src="images/logo.png" alt="logo" width="400px"></a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#maker-story">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">DESIGNS & PRODUCTS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                CONTACT
+              </a>
+              <ul class="dropdown-menu">
+                <a class="nav-link dropdown-item" href="faqs.html">FAQs</a>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Message Me</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h2 id="heading">Designs Gallery</h2>
+
+    <main style="height: 1300px">
     <section>
       <div class="container">
         <div class="product-box">
-            <img class="product-gallery-img center" src="images/PandaEar.jpg" alt="switch" width="400">
-            <p class="product-info">Panda Earrings</p>
-            <p><span class="no-bold">$14.00</span></p>
-          </a>
+          <img class="product-gallery-img center" src="images/PandaEar.jpg" alt="panda earrings" width="200">
+          <p class="product-info">Panda Earrings</p>
+          <p><span class="no-bold">$14.00</span></p>
         </div>
         <div class="product-box">
-            <img class="product-gallery-img" src="images/frog.jpg" alt="sushi-charm-bracelet" width="400">
-            <p class="product-info">Happy Frog Earrings</p>
-            <p><span class="no-bold">$14.00</span></p>
-          </a>
+          <img class="product-gallery-img" src="images/frog.jpg" alt="green frog earrings" width="200">
+          <p class="product-info">Happy Frog Earrings</p>
+          <p><span class="no-bold">$14.00</span></p>
         </div>
         <div class="product-box">
-            <img class="product-gallery-img" src="images/lollipop.jpg" alt="star-charms" width="400">
-            <!--what is the difference between center and product description center-->
-            <p class="product-info">Lollipop Earrings</p>
-            <p><span class="no-bold">$14.00</span></p>
-          </a>
+          <img class="product-gallery-img" src="images/lollipop.jpg" alt="rainbow swirl lolliopop earrings hanging off the side of a teacup" width="200">
+          <p class="product-info">Lollipop Earrings</p>
+          <p><span class="no-bold">$14.00</span></p>
         </div>
         <div class="product-box">
-            <img class="product-gallery-img" src="images/pinkMac.jpg" alt="snowcone" width="400">
-            <p class="product-info">Pink Macaron Charm Bracelet</p>
-            <p><span class="no-bold">$20.00</span></p>
-          </a>
+          <img class=product-gallery-img src="images/dangoEar.jpg" alt="Kawaii Dango Earrings" width="200">
+          <p class="product-info">Kawaii Dango Earrings</p>
+          <p><span class="no-bold">$14.00</span></p> <!--span just affects one line-->
         </div>
         <div class="product-box">
-            <img class="product-gallery-img" src="images/onigri.jpg" alt="boba" width="400">
-            <p class="product-info">Onigri Necklace</p>
-            <p><span class="no-bold">$15.00</span></p>
-          </a>
-        </div>
-        <div class="product-box">
-            <img class=product-gallery-img src="images/pandaNeck.jpg" alt="turtle-macaron" width="400">
-            <p class="product-info">Panda Necklace</p>
-            <p><span class="no-bold">$15.00</span></p> <!--span just affects one line-->
-          </a>
-        </div>
-        <div class="product-box">
-          <img class=product-gallery-img src="images/dangoEar.jpg" alt="turtle-macaron" width="400">
-          <p class="product-info">Dango Earrings</p>
+          <img class=product-gallery-img src="images/whiteRabbitEar.jpg" alt="White Rabbit Earrings" width="200">
+          <p class="product-info">White Rabbit Earrings</p>
           <p><span class="no-bold">$15.00</span></p> <!--span just affects one line-->
-        </a>
-      </div>
-      <div class="product-box">
-        <img class=product-gallery-img src="images/snowmanEar.jpg" alt="turtle-macaron" width="400">
-        <p class="product-info">Snowman Earrings</p>
-        <p><span class="no-bold">$15.00</span></p> <!--span just affects one line-->
-      </a>
-    </div>
-    <div class="product-box">
-      <img class=product-gallery-img src="images/chocDonNeck.jpg" alt="turtle-macaron" width="400">
-      <p class="product-info">Chocolate Donut Necklace</p>
-      <p><span class="no-bold">$15.00</span></p> <!--span just affects one line-->
-    </a>
-  </div>
+        </div>
+        <div class="product-box">
+          <img class="product-gallery-img" src="images/pinkMac.jpg" alt="Pink Macarons hanging off of a silver chain bracelet" width="200">
+          <p class="product-info">Pink Macaron Charm Bracelet</p>
+          <p><span class="no-bold">$20.00</span></p>
+        </div>
+        <div class="product-box">
+          <img class="product-gallery-img" src="images/onigri.jpg" alt="Onigri Charm Necklace" width="200">
+          <p class="product-info">Onigri Necklace</p>
+          <p><span class="no-bold">$15.00</span></p>
+        </div>
+        <div class="product-box">
+          <img class=product-gallery-img src="images/pandaNeck.jpg" alt="Panda Necklace" width="200">
+          <p class="product-info">Panda Necklace</p>
+          <p><span class="no-bold">$15.00</span></p> <!--span just affects one line-->
+        </div>
+        <div class="product-box">
+          <img class=product-gallery-img src="images/peaPod.jpg" alt="Two peas in a pod necklace" width="200">
+          <p class="product-info">Pea Pod Necklace</p>
+          <p><span class="no-bold">$15.00</span></p> <!--span just affects one line-->
+        </div>
+        <div class="product-box">
+          <img class=product-gallery-img src="images/snowmanEar.jpg" alt="Snowman earrings" width="200">
+          <p class="product-info">Snowman Earrings</p>
+          <p><span class="no-bold">$15.00</span></p> <!--span just affects one line-->
+        </div>
+        <div class="product-box">
+          <img class=product-gallery-img src="images/orangeCatEar.jpg" alt="Orange cat earrings" width="200">
+          <p class="product-info">Orange Cat Earrings</p>
+          <p><span class="no-bold">$15.00</span></p> <!--span just affects one line-->
+        </div>
+        <div class="product-box">
+          <img class=product-gallery-img src="images/chocDonNeck.jpg" alt="Chocolate donut necklace" width="200">
+          <p class="product-info">Chocolate Donut Necklace</p>
+          <p><span class="no-bold">$15.00</span></p> <!--span just affects one line-->
+        </div>
+        <div class="product-box">
+          <img class=product-gallery-img src="images/PinkDonNeck.jpg" alt="Pink donut necklace" width="200">
+          <p class="product-info">Pink Donut Necklace</p>
+          <p><span class="no-bold">$15.00</span></p> <!--span just affects one line-->
+        </div>
+        <div class="product-box">
+          <img class=product-gallery-img src="images/bobaNeck1.jpg" alt="Pink bubble tea necklace" width="200">
+          <p class="product-info">Bubble Tea Necklace</p>
+          <p><span class="no-bold">$15.00</span></p> <!--span just affects one line-->
+        </div>
+        <div class="product-box">
+          <img class=product-gallery-img src="images/bobaNeck2.jpg" alt="Yellow bubble tea necklace" width="200">
+          <p class="product-info">Bubble Tea Necklace</p>
+          <p><span class="no-bold">$15.00</span></p> <!--span just affects one line-->
+        </div>
+        <div class="product-box">
+          <img class=product-gallery-img src="images/bobaNeck3.jpg" alt="Blue bubble tea necklace" width="200">
+          <p class="product-info">Bubble Tea Necklace</p>
+          <p><span class="no-bold">$15.00</span></p> <!--span just affects one line-->
+        </div>
+        <div class="product-box">
+          <img class=product-gallery-img src="images/bobaNeck4.jpg" alt="Purple bubble tea necklace" width="200">
+          <p class="product-info">Bubble Tea Necklace</p>
+          <p><span class="no-bold">$15.00</span></p> <!--span just affects one line-->
+        </div>
+        <div class="product-box">
+          <img class=product-gallery-img src="images/chocRainSpr.jpg" alt="Chocolate Rainbow Sprinkle Donut Earrings" width="200">
+          <p class="product-info">Chocolate Rainbow Sprinkle Donut</p>
+          <p><span class="no-bold">$14.00</span></p> <!--span just affects one line-->
+        </div>
+        <div class="product-box">
+          <img class=product-gallery-img src="images/soupDumpEar.jpg" alt="Soup dumpling earrings" width="200">
+          <p class="product-info">Soup Dumpling Earrings</p>
+          <p><span class="no-bold">$14.00</span></p> <!--span just affects one line-->
+        </div>
+        <div class="product-box">
+          <img class=product-gallery-img src="images/fruitPhoneCharm.jpg" alt="Fruit Phone Charms" width="200">
+          <p class="product-info">Fruit Phone Charms</p>
+          <p><span class="no-bold">$10.00</span></p> <!--span just affects one line-->
+        </div>
+        <div class="product-box">
+          <img class=product-gallery-img src="images/fruitEarrings.jpg" alt="Fruit earrings" width="200">
+          <p class="product-info">Fruit Earrings</p>
+          <p><span class="no-bold">$14.00</span></p> <!--span just affects one line-->
+        </div>
+        <div class="product-box">
+          <img class=product-gallery-img src="images/happyFrogNeck.jpg" alt="Happy Frog Necklace" width="200">
+          <p class="product-info">Happy Frog Necklace</p>
+          <p><span class="no-bold">$14.00</span></p> <!--span just affects one line-->
+        </div>
+        <div class="product-box">
+          <img class=product-gallery-img src="images/sushiEarrings.jpg" alt="Sushi earrings" width="200">
+          <p class="product-info">Sushi Earrings</p>
+          <p><span class="no-bold">$14.00</span></p> <!--span just affects one line-->
+        </div>
+        <div class="product-box">
+          <img class=product-gallery-img src="images/snowNeck.jpg" alt="Snow Cone Necklace" width="200">
+          <p class="product-info">Snow Cone Necklace</p>
+          <p><span class="no-bold">$14.00</span></p> <!--span just affects one line-->
+        </div>
+        <div class="product-box">
+          <img class=product-gallery-img src="images/dangoNeck.jpg" alt="Kawaii Dango Necklace" width="200">
+          <p class="product-info">Kawaii Dango Necklace</p>
+          <p><span class="no-bold">$14.00</span></p> <!--span just affects one line-->
+        </div>
+        <div class="product-box">
+          <img class=product-gallery-img src="images/bobaEar.jpg" alt="Bubble Tea Earrings" width="200">
+          <p class="product-info">Bubble Tea Earrings</p>
+          <p><span class="no-bold">$14.00</span></p> <!--span just affects one line-->
+        </div>
+        <div class="product-box">
+          <img class=product-gallery-img src="images/sushiEar.jpg" alt="Kawaii Sushi Earrings" width="200">
+          <p class="product-info">Kawaii Sushi Earrings</p>
+          <p><span class="no-bold">$14.00</span></p> <!--span just affects one line-->
+        </div>
+        <div class="product-box">
+          <img class=product-gallery-img src="images/starCharm.jpg" alt="Kawaii Star Charm" width="200">
+          <p class="product-info">Kawaii Star Charm</p>
+          <p><span class="no-bold">$10.00</span></p> <!--span just affects one line-->
+        </div>
       </div>
     </section>
-  </main>
-  <footer>
-    <p> Copyright 2023 - Kiki Reads Comics</p>
-    <!-- Rounded icons -->
-    <div class="rounded-icons">
-      <a href="https://www.instagram.com/kikireadscomics/" class="rounded-icon">
-        <img src="images/ig.svg" alt="Instagram Logo">
-      </a>
+    </main>
+    <footer>
+      <p> Copyright 2023 - Kiki Reads Comics</p>
+      <!-- Rounded icons -->
+      <div class="rounded-icons">
+        <a href="https://www.instagram.com/kikireadscomics/" class="rounded-icon">
+          <img src="images/ig.svg" alt="Instagram Logo">
+        </a>
       <div class="rounded-icon">
         <a href="https://www.facebook.com/kikireadscomics">
           <img src="images/fb.png" alt="Facebook Logo">
+        </a>
       </div>
       <div class="rounded-icon">
         <a href="https://www.etsy.com/shop/KikiReadsComics?ref=profile_header">
           <img src="images/etsy.png" alt="Etsy Logo">
+        </a>
       </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

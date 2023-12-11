@@ -1,3 +1,16 @@
+/*h2 {
+  /*for headings on D&P and Contact WHY IS THIS NOT WORKING
+  font-size: 3em;
+  font-weight: 800;
+}*/
+
+h2 {
+  font-weight: 400;
+  font-size: 20px;
+  padding: 40px 0px 20px 0px;
+  /*clockwise margins*/
+}
+
 .dashboard-container {
   position: relative;
   margin-top: auto;
@@ -61,7 +74,6 @@
   text-align: center;
 }
 
-/* Adjust button styles if needed */
 .inner-detail-box button {
   padding: 10px 20px;
   height: 80px;
@@ -72,10 +84,6 @@
 }
 
 .rounded-buttons {
-  /* display: flex;
-  justify-content: space-around;
-  margin-top: 20px;*/
-
   padding: 15px 30px; /* Adjust padding for larger buttons */
   border-radius: 30px; /* Adjust border-radius for rounded corners */
   font-size: 18px; /* Adjust font size for larger text */
@@ -145,6 +153,11 @@
   display: none;
 }
 
+/* Adds an underline for X tab */
+.active {
+  border-bottom: 2px solid #000; /* Adjust the color and thickness of the underline */
+}
+
 @media (max-width: 768px) {
   .menu {
     display: none;
@@ -173,9 +186,7 @@
 .logo {
   width: 400px;
   border-right-width: 20px;
-  /*CHANGED*/
   border-left-width: 20px;
-  /*CHANGED*/
 }
 
 .outer-nav-box {
@@ -191,9 +202,7 @@
   margin-bottom: 100px;
   column-gap: 100px;
   line-height: 100px;
-  /*CHANGED*/
   width: 900px;
-  /*CHANGED*/
   flex-direction: column;
   justify-content: right;
 }
@@ -209,13 +218,6 @@ h1 {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
-}
-
-h2 {
-  font-weight: 400;
-  font-size: 20px;
-  padding: 40px 0px 20px 0px;
-  /*clockwise margins*/
 }
 
 body {
@@ -243,10 +245,6 @@ h3 {
 }
 
 .eye {
-  /*width: 240px;
-    width: 20%;
-    height: 120px;
-    */
   width: 9%;
   height: 36px;
   background: radial-gradient(
@@ -262,9 +260,7 @@ h3 {
   border-radius: 50%;
   position: relative;
   overflow: hidden;
-  /*border: 5px solid ; /* Outer border color */
   border: 5px solid #add8e6;
-  /* Outer border color */
 }
 
 .ball {
@@ -303,24 +299,8 @@ a {
   font-weight: bold;
 }
 
-.product-box {
-  width: 300px;
-  margin-top: 30px;
-}
-
-.product-box:hover {
-  background-color: #ffa6af;
-  font-weight: 800;
-}
-
 .no-bold {
   font-weight: 400;
-}
-
-.product-gallery-img {
-  width: 400px;
-  margin: 5px;
-  border: 4px solid black;
 }
 
 .nav-box {
@@ -329,50 +309,12 @@ a {
   justify-content: flex-end;
 }
 
-.product-detail-price {
-  display: inline-block;
-  margin-right: 15px;
-  margin-top: 50px;
-}
-
-.glazing,
-.pack-size {
-  width: 225px;
-  margin-top: 30px;
-}
-
 /*flexbox container section*/
 .container {
   flex-flow: wrap;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-}
-
-.product-box {
-  /* flex: 50 50 calc(33.33% - 20px); */
-  flex: 0 0 calc(27%);
-  /*  3 columns per row with some gap */
-
-  /* text-align: center;*/
-  flex-direction: column;
-  /* Align content vertically */
-  font-size: 32px;
-  margin-top: 30px;
-}
-
-.product-gallery-img {
-  width: 100%;
-  /* Make the images responsive within their containers */
-  max-width: 400px;
-  /* Limit the maximum width */
-  margin: 0 auto;
-  /* Center the images horizontally within the boxes */
-}
-
-.product {
-  display: flex;
-  align-items: center;
 }
 
 footer {
@@ -390,8 +332,8 @@ footer {
   bottom: 20px;
   right: 20px;
   display: flex;
-  flex-direction: column; /*new*/
-  align-items: flex-end; /*new*/
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .rounded-icon {
@@ -402,7 +344,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 20px; /* Adjust the spacing between icons */
+  margin-left: 20px; /* Adjusts the spacing between icons */
   margin-bottom: 5px;
   cursor: pointer;
 }
@@ -415,13 +357,13 @@ footer {
   border-radius: 50%;
 }
 
-/* Optional: Add hover effects or other styles as needed */
 .rounded-icon:hover {
-  background-color: #f9dfe0; /* Replace with your desired hover background color */
+  background-color: #f9dfe0;
 }
 
-#faqs {
+#heading {
   margin-left: 2em;
+  font-weight: 700;
 }
 
 .faq-container {
@@ -442,7 +384,7 @@ footer {
   text-align: left;
   position: relative;
   display: inline-block;
-  width: 48%; /* Adjust as needed */
+  width: 48%;
 }
 
 .faq-answer {
