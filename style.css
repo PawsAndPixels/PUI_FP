@@ -28,12 +28,17 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding-top: 13.3%;
-  /*changes height of the header pic*/
 }
 
 .navbar,
 .container-fluid {
   padding: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 #navbarSupportedContent {
@@ -46,8 +51,8 @@ h2 {
   /* margin-top: -13.3%;*/
 }
 
-.nav-link {
-  font-size: large;
+.nav-link:hover {
+  text-decoration: underline;
 }
 
 .hero-image {
@@ -88,6 +93,8 @@ h2 {
   border-radius: 30px; /* Adjust border-radius for rounded corners */
   font-size: 18px; /* Adjust font size for larger text */
   margin-right: 10px;
+  background-color: #f9dfe0;
+  color: black;
 }
 
 .rounded-buttons button {
@@ -99,20 +106,6 @@ h2 {
   background-color: #f9dfe0;
 }
 
-/* Style for Button 1 */
-.rounded-buttons a.btn-secondary {
-  background-color: #8b1317;
-  color: black;
-  border: 2px solid #f9dfe0;
-}
-
-/* Style for Button 2 */
-.rounded-buttons {
-  background-color: #f9dfe0;
-  color: black;
-  border: 2px solid #f9dfe0;
-}
-
 .rounded-buttons button:hover {
   background-color: #ccc;
 }
@@ -121,8 +114,9 @@ h2 {
   /* flex: 1; */
   padding: 0px 15px 0px 15px;
   display: inline;
-  height: 65px;
-  width: 100px;
+  height: auto;
+  /*height: 65px;*/
+  max-width: 100px;
   align-self: flex-end;
 }
 
@@ -141,12 +135,6 @@ h2 {
   display: inline-block;
   margin-left: 20px;
   margin-right: 10px;
-}
-
-.menu a {
-  text-decoration: none;
-  color: white;
-  font-size: 14px;
 }
 
 .burgerlogo {
@@ -177,11 +165,11 @@ h2 {
   width: 100%;
 }
 
-.nav-box {
+/*.nav-box {
   width: 850px;
   display: flex;
   justify-content: flex-end;
-}
+}*/
 
 .logo {
   width: 400px;
@@ -227,12 +215,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Roboto", sans-serif;
-}
-
 .eyes {
   position: absolute;
   top: 50.5%;
@@ -254,7 +236,6 @@ h3 {
     #ffffd9 60%,
     #add8e6 80%
   );
-  /*background: #fcddd9;*/
   display: inline-block;
   margin: 25px;
   border-radius: 50%;
@@ -295,6 +276,7 @@ a {
   color: black !important;
 }
 
+<<<<<<< Updated upstream
 .description-label {
   font-weight: bold;
 }
@@ -303,6 +285,8 @@ a {
   font-weight: 400;
 }
 
+=======
+>>>>>>> Stashed changes
 .nav-box {
   width: 850px;
   display: flex;
@@ -311,20 +295,52 @@ a {
 
 /*flexbox container section*/
 .container {
-  flex-flow: wrap;
+  /*flex-flow: wrap;*/
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  /* align-items: flex-start;
+  justify-content: space-between; */
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
+<<<<<<< Updated upstream
+=======
+.product-box {
+  /* flex: 50 50 calc(33.33% - 20px); */
+  width: 300px;
+  margin-top: 30px;
+  text-align: center;
+  /* flex: 0 0 calc(27%);
+    3 columns per row with some gap */
+
+  /* text-align: center;*/
+  flex-direction: column;
+  /* Align content vertically */
+  font-size: 32px;
+  margin-top: 30px;
+}
+
+.product-gallery-img {
+  width: 100%;
+  /* Make the images responsive within their containers */
+  max-width: 400px;
+  /* Limit the maximum width */
+  height: auto;
+  border: 4px solid black;
+  margin: 0 auto;
+  /* Center the images horizontally within the boxes */
+}
+
+>>>>>>> Stashed changes
 footer {
   background-color: #adfcfe;
   text-align: center;
-  padding: 5px;
   font-family: "Roboto," sans-serif;
   color: black;
-  font-size: 10px;
-  height: 80px;
+  font-size: 14px;
+  width: 100%;
+  height: 40px;
 }
 
 .rounded-icons {
@@ -344,8 +360,12 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< Updated upstream
   margin-left: 20px; /* Adjusts the spacing between icons */
   margin-bottom: 5px;
+=======
+  margin: 3px;
+>>>>>>> Stashed changes
   cursor: pointer;
 }
 
@@ -359,6 +379,7 @@ footer {
 
 .rounded-icon:hover {
   background-color: #f9dfe0;
+<<<<<<< Updated upstream
 }
 
 #heading {
@@ -397,4 +418,6 @@ footer {
   top: 50%;
   right: 15px;
   transform: translateY(-50%);
+=======
+>>>>>>> Stashed changes
 }

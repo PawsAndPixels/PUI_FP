@@ -1,3 +1,7 @@
+#faqs {
+  margin-left: 2em;
+}
+
 /* Add this CSS for rounded questions and light grey background */
 .faq-question {
   cursor: pointer;
@@ -29,4 +33,14 @@
   background-color: #fff; /* Background color for the answer */
   border: 1px solid #ddd; /* Border color */
   border-radius: 5px; /* Rounded corners for the answer */
+  width: fit-content;
+}
+
+.faq-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 2em;
 }
