@@ -28,17 +28,15 @@
     <link rel="stylesheet" href="about.css" type="text/css" />
 
     <script defer type="text/javascript" src="./JS/EyeBall.js"></script>
+    <script defer type="text/javascript" src="./JS/Underline.js"></script>
   </head>
 
   <body>
     <div class="dashboard-container">
       <header>
         <h1>Kiki Reads Comics</h1>
-        <!-- Top Banner with cat -->
+        <!--top banner with cat -->
         <div class="header">
-          <!--  <nav class="nav">
-                <a href="./index.html">
-                  <img class="logo" src="../images/logo.png" alt="logo" width="400">-->
           <div class="eyes">
             <div class="eye">
               <div class="ball"></div>
@@ -55,20 +53,26 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <a href="./index.html"
-            ><img id="logo" src="images/logo.png" alt="logo" width="400px"
+          <a href="index.html"
+            ><img
+              id="logo"
+              src="images/logo.png"
+              alt="Kiki Reads Comics logo"
+              width="400px"
           /></a>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >HOME</a
+              <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#maker-story"
+                >ABOUT</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#maker-story">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">DESIGNS & PRODUCTS</a>
+              <a class="nav-link" aria-current="page" href="gallery.html"
+                >DESIGNS & PRODUCTS</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -82,13 +86,23 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="nav-link dropdown-item" href="faqs.html">FAQs</a>
+                  <a
+                    class="nav-link dropdown-item"
+                    aria-current="page"
+                    href="faqs.html"
+                    >FAQs</a
+                  >
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
                 <li>
-                  <a class="dropdown-item" href="contact.html">Message Me</a>
+                  <a
+                    class="dropdown-item"
+                    aria-current="page"
+                    href="contact.html"
+                    >Message Me</a
+                  >
                 </li>
               </ul>
             </li>
@@ -101,23 +115,20 @@
       <div class="hero-image">
         <h2 id="hero-text">Handmade crafts inspired by all things cute <3.</h2>
         <div class="inner-detail-box">
-          <button
-            class="btn rounded-pill rounded-buttons btn-secondary"
-            href="gallery.html"
-          >
-            Explore Designs
-          </button>
-
-          <button
-            class="btn rounded-pill rounded-buttons btn-secondary"
-            href="#maker-story"
-          >
-            About the Maker
-          </button>
+          <a href="gallery.html">
+            <button class="btn rounded-pill rounded-buttons btn-secondary">
+              Explore Designs
+            </button>
+          </a>
+          <a href="#maker-story">
+            <button class="btn rounded-pill rounded-buttons btn-secondary">
+              About the Maker
+            </button>
+          </a>
         </div>
       </div>
+      <h2 id="heading">Maker's Story</h2>
       <section id="maker-story">
-        <h2>Maker's Story</h2>
         <div class="maker-content">
           <img
             id="maker-illustration"

@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
     />
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="contact.css" />
 
 
     <style>
@@ -31,98 +31,112 @@
     <link rel="stylesheet" href="about.css" type="text/css" />
 
     <script defer type="text/javascript" src="./JS/EyeBall.js"></script>
+    <script defer type="text/javascript" src="./JS/Underline.js"></script>
   </head>
 
-<body>
-  <div class="dashboard-container">
-    <header>
-      <div class="header">
-        <!--  <nav class="nav">
-               <a href="./index.html">
-                <img class="logo" src="../images/logo.png" alt="logo" width="400">-->
-        <div class="eyes">
-          <div class="eye">
-            <div class="ball"></div>
-          </div>
-          <div class="eye">
-            <div class="ball"></div>
+  <body>
+    <div class="dashboard-container">
+      <header>
+        <div class="header">
+          <div class="eyes">
+            <div class="eye">
+              <div class="ball"></div>
+            </div>
+            <div class="eye">
+              <div class="ball"></div>
+            </div>
           </div>
         </div>
-      </div>
-  </div>
-  </header>
-
-
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <a href="./index.html"><img id="logo" src="images/logo.png" alt="logo" width="400px"></a>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#maker-story">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">DESIGNS & PRODUCTS</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              CONTACT
-            </a>
-            <ul class="dropdown-menu">
-              <a class="nav-link dropdown-item" href="faqs.html">FAQs</a>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <a class="dropdown-item" href="contact.html">Message Me</a>
-            </ul>
-          </li>
-        </ul>
-      </div>
+      </header>
     </div>
-  </nav>
 
-  <main style="height: 1300px">
-    <div class="contact-container">
-      <h1>Contact</h1>
-  
-      <div class="form-container">
-        <form action="submit_form.php" method="post"> <!-- You can set the actual form submission URL -->
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-  
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-  
-          <label for="phone">Phone Number:</label>
-          <input type="tel" id="phone" name="phone">
-  
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-  
-          <button type="submit">Send</button>
-        </form>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a href="./index.html"
+            ><img id="logo" src="images/logo.png" alt="logo" width="400px"
+          /></a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#maker-story">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">DESIGNS & PRODUCTS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                CONTACT
+              </a>
+              <ul class="dropdown-menu">
+                <a class="nav-link dropdown-item" href="faqs.html">FAQs</a>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <a class="nav-link dropdown-item" href="contact.html"
+                  >Message Me</a
+                >
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </main>
-  <footer>
-    <p> Copyright 2023 - Kiki Reads Comics</p>
-    <!-- Rounded icons -->
-    <div class="rounded-icons">
-      <a href="https://www.instagram.com/kikireadscomics/" class="rounded-icon">
-        <img src="images/ig.svg" alt="Instagram Logo">
-      </a>
+    </nav>
+
+    <main style="height: 1300px">
+      <div class="contact-container">
+        <h1>Contact</h1>
+
+        <div class="form-container">
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright 2023 - Kiki Reads Comics</p>
+      <!--rounded icons -->
+      <div class="rounded-icons">
+        <a
+          href="https://www.instagram.com/kikireadscomics/"
+          class="rounded-icon"
+        >
+          <img src="images/ig.svg" alt="Instagram Logo" />
+        </a>
+      </div>
       <div class="rounded-icon">
         <a href="https://www.facebook.com/kikireadscomics">
-          <img src="images/fb.png" alt="Facebook Logo">
+          <img src="images/fb.png" alt="Facebook Logo" />
+        </a>
       </div>
       <div class="rounded-icon">
         <a href="https://www.etsy.com/shop/KikiReadsComics?ref=profile_header">
-          <img src="images/etsy.png" alt="Etsy Logo">
+          <img src="images/etsy.png" alt="Etsy Logo" />
+        </a>
       </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

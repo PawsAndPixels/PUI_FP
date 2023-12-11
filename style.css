@@ -1,3 +1,16 @@
+/*h2 {
+  /*for headings on D&P and Contact WHY IS THIS NOT WORKING
+  font-size: 3em;
+  font-weight: 800;
+}*/
+
+h2 {
+  font-weight: 400;
+  font-size: 20px;
+  padding: 40px 0px 20px 0px;
+  /*clockwise margins*/
+}
+
 .dashboard-container {
   position: relative;
   margin-top: auto;
@@ -15,12 +28,17 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 13.3%;
-  /*changes height of the header pic*/
 }
 
 .navbar,
 .container-fluid {
   padding: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 #navbarSupportedContent {
@@ -33,8 +51,8 @@
   /* margin-top: -13.3%;*/
 }
 
-.nav-link {
-  font-size: large;
+.nav-link:hover {
+  text-decoration: underline;
 }
 
 .hero-image {
@@ -61,7 +79,6 @@
   text-align: center;
 }
 
-/* Adjust button styles if needed */
 .inner-detail-box button {
   padding: 10px 20px;
   height: 80px;
@@ -72,14 +89,12 @@
 }
 
 .rounded-buttons {
-  /* display: flex;
-  justify-content: space-around;
-  margin-top: 20px;*/
-
   padding: 15px 30px; /* Adjust padding for larger buttons */
   border-radius: 30px; /* Adjust border-radius for rounded corners */
   font-size: 18px; /* Adjust font size for larger text */
   margin-right: 10px;
+  background-color: #f9dfe0;
+  color: black;
 }
 
 .rounded-buttons button {
@@ -91,20 +106,6 @@
   background-color: #f9dfe0;
 }
 
-/* Style for Button 1 */
-.rounded-buttons a.btn-secondary {
-  background-color: #8b1317;
-  color: black;
-  border: 2px solid #f9dfe0;
-}
-
-/* Style for Button 2 */
-.rounded-buttons {
-  background-color: #f9dfe0;
-  color: black;
-  border: 2px solid #f9dfe0;
-}
-
 .rounded-buttons button:hover {
   background-color: #ccc;
 }
@@ -113,8 +114,9 @@
   /* flex: 1; */
   padding: 0px 15px 0px 15px;
   display: inline;
-  height: 65px;
-  width: 100px;
+  height: auto;
+  /*height: 65px;*/
+  max-width: 100px;
   align-self: flex-end;
 }
 
@@ -135,14 +137,13 @@
   margin-right: 10px;
 }
 
-.menu a {
-  text-decoration: none;
-  color: white;
-  font-size: 14px;
-}
-
 .burgerlogo {
   display: none;
+}
+
+/* Adds an underline for X tab */
+.active {
+  border-bottom: 2px solid #000; /* Adjust the color and thickness of the underline */
 }
 
 @media (max-width: 768px) {
@@ -164,18 +165,16 @@
   width: 100%;
 }
 
-.nav-box {
+/*.nav-box {
   width: 850px;
   display: flex;
   justify-content: flex-end;
-}
+}*/
 
 .logo {
   width: 400px;
   border-right-width: 20px;
-  /*CHANGED*/
   border-left-width: 20px;
-  /*CHANGED*/
 }
 
 .outer-nav-box {
@@ -191,9 +190,7 @@
   margin-bottom: 100px;
   column-gap: 100px;
   line-height: 100px;
-  /*CHANGED*/
   width: 900px;
-  /*CHANGED*/
   flex-direction: column;
   justify-content: right;
 }
@@ -211,23 +208,10 @@ h1 {
   border-width: 0;
 }
 
-h2 {
-  font-weight: 400;
-  font-size: 20px;
-  padding: 40px 0px 20px 0px;
-  /*clockwise margins*/
-}
-
 body {
   margin: 0;
   padding: 0;
   color: black;
-  font-family: "Roboto", sans-serif;
-}
-
-h1,
-h2,
-h3 {
   font-family: "Roboto", sans-serif;
 }
 
@@ -243,10 +227,6 @@ h3 {
 }
 
 .eye {
-  /*width: 240px;
-    width: 20%;
-    height: 120px;
-    */
   width: 9%;
   height: 36px;
   background: radial-gradient(
@@ -256,15 +236,12 @@ h3 {
     #ffffd9 60%,
     #add8e6 80%
   );
-  /*background: #fcddd9;*/
   display: inline-block;
   margin: 25px;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
-  /*border: 5px solid ; /* Outer border color */
   border: 5px solid #add8e6;
-  /* Outer border color */
 }
 
 .ball {
@@ -303,24 +280,8 @@ a {
   font-weight: bold;
 }
 
-.product-box {
-  width: 300px;
-  margin-top: 30px;
-}
-
-.product-box:hover {
-  background-color: #ffa6af;
-  font-weight: 800;
-}
-
 .no-bold {
   font-weight: 400;
-}
-
-.product-gallery-img {
-  width: 400px;
-  margin: 5px;
-  border: 4px solid black;
 }
 
 .nav-box {
@@ -329,30 +290,24 @@ a {
   justify-content: flex-end;
 }
 
-.product-detail-price {
-  display: inline-block;
-  margin-right: 15px;
-  margin-top: 50px;
-}
-
-.glazing,
-.pack-size {
-  width: 225px;
-  margin-top: 30px;
-}
-
 /*flexbox container section*/
 .container {
-  flex-flow: wrap;
+  /*flex-flow: wrap;*/
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  /* align-items: flex-start;
+  justify-content: space-between; */
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
 .product-box {
   /* flex: 50 50 calc(33.33% - 20px); */
-  flex: 0 0 calc(27%);
-  /*  3 columns per row with some gap */
+  width: 300px;
+  margin-top: 30px;
+  text-align: center;
+  /* flex: 0 0 calc(27%);
+    3 columns per row with some gap */
 
   /* text-align: center;*/
   flex-direction: column;
@@ -366,23 +321,20 @@ a {
   /* Make the images responsive within their containers */
   max-width: 400px;
   /* Limit the maximum width */
+  height: auto;
+  border: 4px solid black;
   margin: 0 auto;
   /* Center the images horizontally within the boxes */
-}
-
-.product {
-  display: flex;
-  align-items: center;
 }
 
 footer {
   background-color: #adfcfe;
   text-align: center;
-  padding: 5px;
   font-family: "Roboto," sans-serif;
   color: black;
-  font-size: 10px;
-  height: 80px;
+  font-size: 14px;
+  width: 100%;
+  height: 40px;
 }
 
 .rounded-icons {
@@ -390,8 +342,8 @@ footer {
   bottom: 20px;
   right: 20px;
   display: flex;
-  flex-direction: column; /*new*/
-  align-items: flex-end; /*new*/
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .rounded-icon {
@@ -402,7 +354,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 20px; /* Adjust the spacing between icons */
+  margin-left: 20px; /* Adjusts the spacing between icons */
   margin-bottom: 5px;
   cursor: pointer;
 }
@@ -415,13 +367,13 @@ footer {
   border-radius: 50%;
 }
 
-/* Optional: Add hover effects or other styles as needed */
 .rounded-icon:hover {
-  background-color: #f9dfe0; /* Replace with your desired hover background color */
+  background-color: #f9dfe0;
 }
 
-#faqs {
+#heading {
   margin-left: 2em;
+  font-weight: 700;
 }
 
 .faq-container {
@@ -442,7 +394,7 @@ footer {
   text-align: left;
   position: relative;
   display: inline-block;
-  width: 48%; /* Adjust as needed */
+  width: 48%;
 }
 
 .faq-answer {
