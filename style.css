@@ -276,7 +276,6 @@ a {
   color: black !important;
 }
 
-<<<<<<< Updated upstream
 .description-label {
   font-weight: bold;
 }
@@ -285,8 +284,6 @@ a {
   font-weight: 400;
 }
 
-=======
->>>>>>> Stashed changes
 .nav-box {
   width: 850px;
   display: flex;
@@ -304,8 +301,6 @@ a {
   margin-top: 30px;
 }
 
-<<<<<<< Updated upstream
-=======
 .product-box {
   /* flex: 50 50 calc(33.33% - 20px); */
   width: 300px;
@@ -332,7 +327,6 @@ a {
   /* Center the images horizontally within the boxes */
 }
 
->>>>>>> Stashed changes
 footer {
   background-color: #adfcfe;
   text-align: center;
@@ -360,12 +354,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< Updated upstream
   margin-left: 20px; /* Adjusts the spacing between icons */
   margin-bottom: 5px;
-=======
-  margin: 3px;
->>>>>>> Stashed changes
   cursor: pointer;
 }
 
@@ -379,7 +369,6 @@ footer {
 
 .rounded-icon:hover {
   background-color: #f9dfe0;
-<<<<<<< Updated upstream
 }
 
 #heading {
@@ -418,6 +407,4 @@ footer {
   top: 50%;
   right: 15px;
   transform: translateY(-50%);
-=======
->>>>>>> Stashed changes
 }
