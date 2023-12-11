@@ -97,11 +97,11 @@
 
 .product-gallery-img {
   width: 100%;
-  /* Make the images responsive within their containers */
+  /* Makes the images responsive within their containers */
   max-width: 400px;
-  /* Limit the maximum width */
+  /* Limits the maximum width */
   margin: 0 auto;
-  /* Center the images horizontally within the boxes */
+  /* Centers the images horizontally within the boxes */
 }
 
 .product {
