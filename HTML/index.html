@@ -5,13 +5,17 @@
     <!--makes website responsive-->
     <meta charset="UTF-8" />
     <title>Kiki Reads Comics</title>
-    <link
+        <!-- External stylesheet for the Open Sans font -->
+    <link 
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
     />
+       <!-- Internal stylesheet importing fonts for Passion One and Roboto -->
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto:wght@300&display=swap");
     </style>
+        <!-- External stylesheet for Bootstrap v5.3.2 -->
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,18 +28,18 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="stylesheet" href="about.css" type="text/css" />
+    <link rel="stylesheet" href="../CSS/style.css" type="text/css" />
+    <link rel="stylesheet" href="../CSS/about.css" type="text/css" />
 
-    <script defer type="text/javascript" src="./JS/EyeBall.js"></script>
-    <script defer type="text/javascript" src="./JS/Underline.js"></script>
+    <script defer type="text/javascript" src="../JS/EyeBall.js"></script>
+    <script defer type="text/javascript" src="../JS/Underline.js"></script>
   </head>
 
   <body>
     <div class="dashboard-container">
       <header>
         <h1>Kiki Reads Comics</h1>
-        <!--top banner with cat -->
+        <!--top banner with cat eyes animation -->
         <div class="header">
           <div class="eyes">
             <div class="eye">
@@ -50,19 +54,23 @@
       </header>
     </div>
 
+        <!-- Navigation bar using Bootstrap -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <a href="index.html"
+        <!-- Logo linked to the homepage -->
+          <a href="../HTML/index.html"
             ><img
               id="logo"
-              src="images/logo.png"
+              src="../images/logo.png"
               alt="Kiki Reads Comics logo"
               width="400px"
           /></a>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+          <!-- Navigation links -->
+
+              <a class="nav-link" aria-current="page" href="../HTML/index.html">HOME</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#maker-story"
@@ -70,10 +78,12 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="gallery.html"
+              <a class="nav-link" aria-current="page" href="../HTML/gallery.html"
                 >DESIGNS & PRODUCTS</a
               >
             </li>
+          <!-- Dropdown menu for the CONTACT link -->
+
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -89,7 +99,7 @@
                   <a
                     class="nav-link dropdown-item"
                     aria-current="page"
-                    href="faqs.html"
+                    href="../HTML/faqs.html"
                     >FAQs</a
                   >
                 </li>
@@ -100,7 +110,7 @@
                   <a
                     class="dropdown-item"
                     aria-current="page"
-                    href="contact.html"
+                    href="../HTML/contact.html"
                     >Message Me</a
                   >
                 </li>
@@ -115,7 +125,7 @@
       <div class="hero-image">
         <h2 id="hero-text">Handmade crafts inspired by all things cute <3.</h2>
         <div class="inner-detail-box">
-          <a href="gallery.html">
+          <a href="../HTML/gallery.html">
             <button class="btn rounded-pill rounded-buttons btn-secondary">
               Explore Designs
             </button>
@@ -127,12 +137,14 @@
           </a>
         </div>
       </div>
+     <!-- Heading for the Maker's Story section -->
       <h2 id="heading">Maker's Story</h2>
       <section id="maker-story">
         <div class="maker-content">
+    <!-- Image of the maker -->
           <img
             id="maker-illustration"
-            src="images/maker.jpg"
+            src="../images/maker.jpg"
             alt="Hannah at her booth"
           />
           <div class="inner-details-box">
@@ -166,26 +178,21 @@
     </main>
 
     <footer>
-      <p>Copyright 2023 - Kiki Reads Comics</p>
+      <p> Copyright 2023 - Kiki Reads Comics</p>
+      <!-- Rounded icons -->
       <div class="rounded-icons">
-        <a
-          href="https://www.instagram.com/kikireadscomics/"
-          class="rounded-icon"
-        >
-          <img src="images/ig.svg" alt="Instagram Logo"
-        /></a>
-        <div class="rounded-icon">
-          <a href="https://www.facebook.com/kikireadscomics">
-            <img src="images/fb.png" alt="Facebook Logo"
-          /></a>
-        </div>
-        <div class="rounded-icon">
-          <a
-            href="https://www.etsy.com/shop/KikiReadsComics?ref=profile_header"
-          >
-            <img src="images/etsy.png" alt="Etsy Logo"
-          /></a>
-        </div>
+        <a href="https://www.instagram.com/kikireadscomics/" class="rounded-icon">
+          <img src="../images/ig.svg" alt="Instagram Logo">
+        </a>
+      <div class="rounded-icon">
+        <a href="https://www.facebook.com/kikireadscomics">
+          <img src="../images/fb.png" alt="Facebook Logo">
+        </a>
+      </div>
+      <div class="rounded-icon">
+        <a href="https://www.etsy.com/shop/KikiReadsComics?ref=profile_header">
+          <img src="../images/etsy.png" alt="Etsy Logo">
+        </a>
       </div>
     </footer>
   </body>

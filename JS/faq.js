@@ -1,3 +1,4 @@
+// Function to toggle the visibility of an answer
 function toggleAnswer(questionNumber) {
   var answerId = "answer" + questionNumber;
   var answerElement = document.getElementById(answerId);

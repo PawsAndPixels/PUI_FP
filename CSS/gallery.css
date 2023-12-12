@@ -1,0 +1,96 @@
+/* Product gallery image styles*/
+.product-box {
+  max-width: 320px;
+  max-height: 380px;
+  margin: 0 auto;
+
+  /*  3 columns per row with some gap */
+  flex: 0 0 calc(23%);
+  text-align: center;
+  margin: 5px;
+  flex-direction: column; /* Align content vertically */
+  position: relative;
+}
+
+.product-gallery-img {
+  max-width: 90%;
+  margin: 0 auto;
+
+  /*  3 columns per row with some gap */
+  flex: 0 0 calc(23%);
+  text-align: center;
+  font-size: 60px;
+  margin: 5px;
+  flex-direction: column; /* Align content vertically */
+  position: relative;
+}
+
+.product-box:hover {
+  background-color: #ffa6af;
+  font-weight: 800;
+}
+
+.product-detail-price {
+  display: inline-block;
+  margin-right: 1em;
+  margin-top: 1px;
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 767px) {
+  .product-box {
+    width: 100%; /* Adjust the width for smaller screens */
+  }
+
+  .product-gallery-img {
+    border: 2px solid black;
+    width: 80%;
+  }
+
+  .product-info {
+    font-size: 12px;
+  }
+
+  .no-bold {
+    font-size: 10px;
+  }
+}
+
+/* Other styles */
+.product-detail-price {
+  display: inline-block;
+}
+
+.glazing,
+.pack-size {
+  width: 225px;
+  margin-top: 30px;
+}
+
+/* Flexbox container section */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+/* Align content vertically */
+.product {
+  display: flex;
+  align-items: center;
+}
+
+/* Product information styles */
+.product-info {
+  font-size: 20px; /* Adjust the font size for product information */
+}
+
+.no-bold {
+  font-weight: 400;
+  font-size: 20px; /* Adjust the font size for the price */
+}
+
+p {
+  margin-bottom: 0;
+}

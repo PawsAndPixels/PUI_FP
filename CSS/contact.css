@@ -5,10 +5,11 @@ body {
 }
 
 .contact-container {
-  max-width: 600px;
+  max-width: 800px;
+  height: 800px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #add8e6;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -37,7 +38,7 @@ textarea {
 }
 
 button {
-  background-color: #3498db;
+  background-color: #ec8690;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -47,5 +48,6 @@ button {
 }
 
 button:hover {
-  background-color: #2980b9;
+  background-color: #ffa6af;
+  font-weight: 800;
 }

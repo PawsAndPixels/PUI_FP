@@ -1,3 +1,4 @@
+// Function to move eye balls based on mouse movement
 function eyeBalls(event) {
   let balls = document.getElementsByClassName("ball");
 

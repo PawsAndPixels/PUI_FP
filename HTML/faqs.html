@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+    <!--makes website responsive-->
+    <meta charset="UTF-8" />
+    <title>Kiki Reads Comics</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <title>About</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/faq.css" type="text/css" />
+    <script defer type="text/javascript" src="../JS/EyeBall.js"></script>
+    <script defer type="text/javascript" src="../JS/faq.js"></script>
+  </head>
+
+  <body>
+    <div class="dashboard-container">
+      <header>
+        <h1>Kiki Reads Comics</h1>
+        <!-- Top Banner with cat -->
+        <div class="header">
+          <div class="eyes">
+            <div class="eye">
+              <div class="ball"></div>
+            </div>
+
+            <div class="eye">
+              <div class="ball"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a href="../HTML/index.html"
+            ><img
+              id="logo"
+              src="../images/logo.png"
+              alt="Kiki Reads Comics logo"
+              width="400px"
+          /></a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../HTML/index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html#maker-story"
+                >ABOUT</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="../HTML/gallery.html"
+                >DESIGNS & PRODUCTS</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                CONTACT
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="nav-link dropdown-item"
+                    aria-current="page"
+                    href="../HTML/faqs.html"
+                    >FAQs</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    aria-current="page"
+                    href="../HTML/contact.html"
+                    >Message Me</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h2 id="heading">Frequently Asked Questions</h2>
+
+    <main>
+      <div class="faq-container">
+        <div class="faq-question" onclick="toggleAnswer(1)">
+          Do you accept requests for custom pieces?
+          <div class="plus-icon">+</div>
+          <div class="faq-answer" id="answer1">
+            Yes! I am open to creating custom pieces based on your preferences
+            and ideas. Whether it's a unique design, a personalized item, or a
+            special request, feel free to reach out, and we can discuss the
+            details to bring your vision to life.
+          </div>
+        </div>
+
+        <div class="faq-question" onclick="toggleAnswer(2)">
+          Do you make keychains?
+          <div class="plus-icon">+</div>
+          <div class="faq-answer" id="answer2">
+            Currently, I do craft keychains, and they are available for
+            purchase. However, please note that I may not continue to produce
+            keychains in the future. If you're interested in acquiring one, it's
+            a good idea to check out the available designs now.
+          </div>
+        </div>
+
+        <div class="faq-question" onclick="toggleAnswer(3)">
+          How do you decide on themes for your designs?
+          <div class="plus-icon">+</div>
+          <div class="faq-answer" id="answer3">
+            My creative process is inspired by the simple joys of everyday life.
+            Whether it's nature, experiences, or small moments that bring
+            happiness, these elements often influence and shape the themes of my
+            designs. This ensures that each piece carries a unique and positive
+            essence.
+          </div>
+        </div>
+
+        <div class="faq-question" onclick="toggleAnswer(4)">
+          Do you make seasonal and/or holiday collections?
+          <div class="plus-icon">+</div>
+          <div class="faq-answer" id="answer4">
+            While I may not currently have specific seasonal or holiday
+            collection, I'm actively exploring ideas and possibilities for
+            introducing such sections in the future. Stay tuned for festive and
+            themed creations that could make perfect gifts for special
+            occasions!
+          </div>
+        </div>
+
+        <div class="faq-question" onclick="toggleAnswer(5)">
+          If my piece breaks, how can I fix it?
+          <div class="plus-icon">+</div>
+          <div class="faq-answer" id="answer5">
+            Accidents happen, and if your piece happens to break, it can be
+            challenging to restore it to its original state. However, one
+            potential solution is to use epoxy glue, which can effectively bond
+            the broken parts. While it might not be perfect, it can provide a
+            reasonable fix to keep enjoying your cherished item.
+          </div>
+        </div>
+
+        <div class="faq-question" onclick="toggleAnswer(6)">
+          Do you sell bulk?
+          <div class="plus-icon">+</div>
+          <div class="faq-answer" id="answer6">
+            Certainly! If you're interested in purchasing items in larger
+            quantities, whether for events, gifts, or any other purpose, I offer
+            bulk options. Feel free to inquire about the products you're
+            interested in, and we can discuss pricing and customization options
+            for bulk orders to meet your specific needs.
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p> Copyright 2023 - Kiki Reads Comics</p>
+      <!-- Rounded icons -->
+      <div class="rounded-icons">
+        <a href="https://www.instagram.com/kikireadscomics/" class="rounded-icon">
+          <img src="../images/ig.svg" alt="Instagram Logo">
+        </a>
+      <div class="rounded-icon">
+        <a href="https://www.facebook.com/kikireadscomics">
+          <img src="../images/fb.png" alt="Facebook Logo">
+        </a>
+      </div>
+      <div class="rounded-icon">
+        <a href="https://www.etsy.com/shop/KikiReadsComics?ref=profile_header">
+          <img src="../images/etsy.png" alt="Etsy Logo">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
