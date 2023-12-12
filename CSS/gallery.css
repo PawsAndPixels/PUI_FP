@@ -83,12 +83,12 @@
 
 /* Product information styles */
 .product-info {
-  font-size: 10px; /* Adjust the font size for product information */
+  font-size: 20px; /* Adjust the font size for product information */
 }
 
 .no-bold {
   font-weight: 400;
-  font-size: 8px; /* Adjust the font size for the price */
+  font-size: 20px; /* Adjust the font size for the price */
 }
 
 p {

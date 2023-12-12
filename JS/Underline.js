@@ -1,5 +1,6 @@
+// Event listener for when the DOM content has been fully loaded
 document.addEventListener("DOMContentLoaded", function () {
-  // Get the current page URL
+  //gets the current page URL
   var currentPageUrl = window.location.href;
 
   // Find the corresponding nav link and add the "active" class

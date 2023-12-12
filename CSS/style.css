@@ -13,7 +13,7 @@ h2 {
 
 .header {
   margin: 0px auto;
-  background-image: url("images/header.jpg");
+  background-image: url("../images/header.jpg");
   background-color: #ffa6af;
   background-repeat: no-repeat;
   background-size: 100%, cover;
@@ -51,7 +51,7 @@ h2 {
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(images/booth.jpg);
+    url(../images/booth.jpg);
   height: 100%;
   width: 100%;
   background-attachment: fixed;

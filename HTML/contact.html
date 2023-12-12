@@ -9,8 +9,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
     />
-    <link rel="stylesheet" href="contact.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../CSS/contact.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto:wght@300&display=swap");
@@ -27,11 +27,11 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="stylesheet" href="about.css" type="text/css" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/about.css" type="text/css" />
 
-    <script defer type="text/javascript" src="./JS/EyeBall.js"></script>
-    <script defer type="text/javascript" src="./JS/Underline.js"></script>
+    <script defer type="text/javascript" src="../JS/EyeBall.js"></script>
+    <script defer type="text/javascript" src="../JS/Underline.js"></script>
   </head>
 
   <body>
@@ -54,19 +54,25 @@
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <a href="./index.html"
-            ><img id="logo" src="images/logo.png" alt="logo" width="400px"
+            ><img
+              id="logo"
+              src="../images/logo.png"
+              alt="Kiki Reads Comics logo"
+              width="400px"
           /></a>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"
-                >HOME</a
+              <a class="nav-link" aria-current="page" href="./index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html#maker-story"
+              >ABOUT</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#maker-story">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">DESIGNS & PRODUCTS</a>
+              <a class="nav-link" aria-current="page" href="./gallery.html"
+                >DESIGNS & PRODUCTS</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -79,22 +85,34 @@
                 CONTACT
               </a>
               <ul class="dropdown-menu">
-                <a class="nav-link dropdown-item" href="faqs.html">FAQs</a>
+                <li>
+                  <a
+                    class="nav-link dropdown-item"
+                    aria-current="page"
+                    href="../HTML/faqs.html"
+                    >FAQs</a
+                  >
+                </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
-                <a class="nav-link dropdown-item" href="contact.html"
-                  >Message Me</a
-                >
+                <li>
+                  <a
+                    class="dropdown-item"
+                    aria-current="page"
+                    href="../HTML/contact.html"
+                    >Message Me</a
+                  >
+                </li>
               </ul>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
     <h2 id="heading">Message the Maker</h2>
     <main>
+     <!-- fill out form -->
       <div class="contact-container">
         <h1>Contact</h1>
 
@@ -117,25 +135,22 @@
         </div>
       </div>
     </main>
+
     <footer>
-      <p>Copyright 2023 - Kiki Reads Comics</p>
-      <!--rounded icons -->
+      <p> Copyright 2023 - Kiki Reads Comics</p>
+      <!-- Rounded icons -->
       <div class="rounded-icons">
-        <a
-          href="https://www.instagram.com/kikireadscomics/"
-          class="rounded-icon"
-        >
-          <img src="images/ig.svg" alt="Instagram Logo" />
+        <a href="https://www.instagram.com/kikireadscomics/" class="rounded-icon">
+          <img src="../images/ig.svg" alt="Instagram Logo">
         </a>
-      </div>
       <div class="rounded-icon">
         <a href="https://www.facebook.com/kikireadscomics">
-          <img src="images/fb.png" alt="Facebook Logo" />
+          <img src="../images/fb.png" alt="Facebook Logo">
         </a>
       </div>
       <div class="rounded-icon">
         <a href="https://www.etsy.com/shop/KikiReadsComics?ref=profile_header">
-          <img src="images/etsy.png" alt="Etsy Logo" />
+          <img src="../images/etsy.png" alt="Etsy Logo">
         </a>
       </div>
     </footer>
