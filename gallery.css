@@ -1,20 +1,29 @@
-/* Product box styles */
+/* Product gallery image styles*/
 .product-box {
+  max-width: 320px;
+  max-height: 380px;
+  margin: 0 auto;
+
   /*  3 columns per row with some gap */
-  /*TODO: flex: 50 50 calc(33.33% - 20px);*/
-  flex: 0 0 calc(27%);
+  flex: 0 0 calc(23%);
   text-align: center;
-  font-size: 32px;
-  width: 100%;
-  margin-top: 100px;
+  margin: 5px;
   flex-direction: column; /* Align content vertically */
-  margin-top: 30px;
-  font-size: 22px;
+  position: relative;
 }
-/*
-.product-box {
-  width: 300px;
-}*/
+
+.product-gallery-img {
+  max-width: 90%;
+  margin: 0 auto;
+
+  /*  3 columns per row with some gap */
+  flex: 0 0 calc(23%);
+  text-align: center;
+  font-size: 60px;
+  margin: 5px;
+  flex-direction: column; /* Align content vertically */
+  position: relative;
+}
 
 .product-box:hover {
   background-color: #ffa6af;
@@ -23,27 +32,8 @@
 
 .product-detail-price {
   display: inline-block;
-  margin-right: 15px;
-  margin-top: 50px;
-}
-
-/* Product gallery image styles */
-.product-gallery-img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border: 4px solid black;
-  margin: 0 auto;
-}
-
-/* Product information styles */
-.product-info {
-  font-size: 14px; /* Adjust the font size for product information */
-}
-
-.no-bold {
-  font-weight: 400;
-  font-size: 12px; /* Adjust the font size for the price */
+  margin-right: 1em;
+  margin-top: 1px;
 }
 
 /* Additional styles for responsiveness */
@@ -54,6 +44,7 @@
 
   .product-gallery-img {
     border: 2px solid black;
+    width: 80%;
   }
 
   .product-info {
@@ -68,8 +59,6 @@
 /* Other styles */
 .product-detail-price {
   display: inline-block;
-  margin-right: 15px;
-  margin-top: 50px;
 }
 
 .glazing,
@@ -83,16 +72,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 30px;
-}
-
-/* Ensure images are responsive within their containers */
-.product-gallery-img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border: 4px solid black;
-  margin: 0 auto;
+  margin-top: 10px;
 }
 
 /* Align content vertically */
@@ -101,16 +81,16 @@
   align-items: center;
 }
 
-.product-gallery-img {
-  width: 100%;
-  /* Makes the images responsive within their containers */
-  max-width: 400px;
-  /* Limits the maximum width */
-  margin: 0 auto;
-  /* Centers the images horizontally within the boxes */
+/* Product information styles */
+.product-info {
+  font-size: 10px; /* Adjust the font size for product information */
 }
 
-.product {
-  display: flex;
-  align-items: center;
+.no-bold {
+  font-weight: 400;
+  font-size: 8px; /* Adjust the font size for the price */
+}
+
+p {
+  margin-bottom: 0;
 }
